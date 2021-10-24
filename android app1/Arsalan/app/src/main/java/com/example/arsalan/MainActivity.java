@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
                 total_t = ((gold_t + silver_t + cash_t) * 0.025);
                 total.setText(Double.toString(total_t));
-            
+
             }
+        });
+    }
 }
