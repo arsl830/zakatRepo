@@ -24,4 +24,30 @@ public class MainActivity extends AppCompatActivity {
         cash=findViewById(R.id.cash);
         total=findViewById(R.id.total);
         calculate=findViewById(R.id.calculate);
+        calculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (TextUtils.isEmpty(gold.getText().toString())) {
+                    gold_t = 0;
+                } else {
+                    gold_t = Float.parseFloat(gold.getText().toString());
+
+                }
+                if (TextUtils.isEmpty(silver.getText().toString())) {
+                    silver_t = 0;
+                } else {
+                    silver_t = Float.parseFloat(silver.getText().toString());
+
+                }
+                if (TextUtils.isEmpty(cash.getText().toString())) {
+                    cash_t = 0;
+                } else {
+                    cash_t = Float.parseFloat(cash.getText().toString());
+
+                }
+
+                total_t = ((gold_t + silver_t + cash_t) * 0.025);
+                total.setText(Double.toString(total_t));
+            
+            }
 }
