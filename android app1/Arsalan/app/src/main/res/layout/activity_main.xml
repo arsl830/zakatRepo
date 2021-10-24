@@ -149,4 +149,39 @@
             app:layout_constraintTop_toTopOf="@+id/guideline4"
             app:layout_constraintVertical_bias="0.418" />
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="172dp"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="64dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_horizontal"
+            android:text="Total Amount Rs:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/total"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="5dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="0.705" />
         
