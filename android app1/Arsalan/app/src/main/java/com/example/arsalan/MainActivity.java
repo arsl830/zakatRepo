@@ -15,5 +15,13 @@ public class MainActivity extends AppCompatActivity {
     Button calculate;
     float gold_t, silver_t, cash_t;
     double total_t;
-    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        gold=findViewById(R.id.gold);
+        silver=findViewById(R.id.silver);
+        cash=findViewById(R.id.cash);
+        total=findViewById(R.id.total);
+        calculate=findViewById(R.id.calculate);
 }
